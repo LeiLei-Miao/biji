@@ -2,11 +2,13 @@
 title: "基本git使用及RMarkdown用法"
 author: "苗蕾蕾"
 date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
 output: 
     bookdown::gitbook:
         split_by: none
         split_bib: TRUE
         df_print: paged
+documentclass: book
 ---
 
 ```{r,include=FALSE}
