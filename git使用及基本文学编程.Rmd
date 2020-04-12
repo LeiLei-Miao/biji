@@ -33,11 +33,11 @@ R是底层软件，RStudio是使用它比较方便的软件，界面友好。
 
 - RStudio
 
-1.打开网址 [RStudio – Open source and enterprise-ready professional software for R](RStudio – Open source and enterprise-ready professional software for R)
+1.打开网址 [https://rstudio.com/](https://rstudio.com/)
 
 2.下载 *RStudio*，*Shiny*和*R Packages*两个暂时不用管
 
-3.选择Free的第一个 [Download RStudio – RStudio](Download RStudio – RStudio)
+3.选择Free的第一个 [Download RStudio – RStudio](https://rstudio.com/products/rstudio/download/)
 
 4.然后点开对应的`.exe`文件，安装好。
 
