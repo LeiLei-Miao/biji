@@ -186,7 +186,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>安装R</li>
 </ul>
-<p>1.打开网址 <a href="">The Comprehensive R Archive Network</a></p>
+<p>1.打开网址 <a href="The%20Comprehensive%20R%20Archive%20Network">The Comprehensive R Archive Network</a></p>
 <p>2.选择 <code>Download R for Windows</code></p>
 <p>3.选择 <code>install R for the first time</code></p>
 <p>4.选择 <code>Download R 3.x.x for Windows</code></p>
@@ -194,15 +194,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>RStudio</li>
 </ul>
-<p>1.打开网址 <a href="">RStudio – Open source and enterprise-ready professional software for R</a></p>
+<p>1.打开网址 <a href="RStudio%20–%20Open%20source%20and%20enterprise-ready%20professional%20software%20for%20R">RStudio – Open source and enterprise-ready professional software for R</a></p>
 <p>2.下载 <em>RStudio</em>，<em>Shiny</em>和<em>R Packages</em>两个暂时不用管</p>
-<p>3.选择Free的第一个 <a href="">Download RStudio – RStudio</a></p>
+<p>3.选择Free的第一个 <a href="Download%20RStudio%20–%20RStudio">Download RStudio – RStudio</a></p>
 <p>4.然后点开对应的<code>.exe</code>文件，安装好。</p>
 </div>
 <div id="安装git" class="section level2">
 <h2><span class="header-section-number">1.2</span> 安装Git</h2>
 <ul>
-<li><p>打开官网地址 <a href="">https://git-scm.com/download/win</a></p></li>
+<li><p>打开官网地址 <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p></li>
 <li><p>选择适合电脑版本的git并下载</p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;./figure/1.jpg&quot;</span>)</a></code></pre></div>
@@ -284,9 +284,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>操作:命令行输入：<code>git push origin master</code></li>
 </ul>
 <p>如果还有不明白的地方，可以参考：</p>
-<p><a href="">https://www.cnblogs.com/zeo-to-one/p/8367801.html</a></p>
-<p><a href="">https://jiaxiangbu.github.io/learn_git/output/git-github-gitlab-learning-notes.html</a></p>
-<p><a href="">https://my.oschina.net/u/3828037/blog/1838718</a></p>
+<p><a href="https://www.cnblogs.com/zeo-to-one/p/8367801.html">https://www.cnblogs.com/zeo-to-one/p/8367801.html</a></p>
+<p><a href="https://jiaxiangbu.github.io/learn_git/output/git-github-gitlab-learning-notes.html">https://jiaxiangbu.github.io/learn_git/output/git-github-gitlab-learning-notes.html</a></p>
+<p><a href="https://my.oschina.net/u/3828037/blog/1838718">https://my.oschina.net/u/3828037/blog/1838718</a></p>
 </div>
 </div>
 </div>
@@ -297,8 +297,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.1</span> RMarkdown基本用法</h2>
 <div id="引用" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> 引用</h3>
-<p>当我们想引用文献中的某段话时，单引号+这段话：
-<code>&gt;XXXXXXXX</code></p>
+<p>当我们想引用文献中的某段话时，单引号+这段话：</p>
+<p><code>&gt;XXXXXXXX</code></p>
 </div>
 <div id="加粗部分信息" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> 加粗部分信息</h3>
@@ -331,11 +331,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;./figure/10.jpg&quot;</span>)</a></code></pre></div>
 <p><img src="figure/10.jpg" /><!-- --></p>
 <ul>
-<li><p><strong>安装包</strong>：安装某些包，用来读取文件</p>
+<li><p><strong>安装包</strong>：必要时安装某些包，用来读取文件</p>
 <p>安装包用命令在console里面：<code>install.packages("包名")</code></p>
 <p>调用包时：<code>library(包名)</code></p></li>
 <li><p><strong>编辑数学公式</strong>：mathpix官网下载后，用mathpix截图需要的公式粘贴后，复制用双$框柱的内容到Rmd文件里即可，很简单，不会使可以问我，也可以看一下学长的这篇文章
-<a href="">https://jiaxiangbu.github.io/awesome-application/learning_notes.html</a></p></li>
+<a href="https://jiaxiangbu.github.io/awesome-application/learning_notes.html">https://jiaxiangbu.github.io/awesome-application/learning_notes.html</a></p></li>
 <li><p><strong>添加图片</strong>：如果综述需要图片，先将图片保存到本地项目的figure文件夹下，然后在RStudio中<code>graphics("图片目录")</code>调用，如下图</p></li>
 </ul>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;./figure/11.jpg&quot;</span>)</a></code></pre></div>
