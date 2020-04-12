@@ -21,7 +21,7 @@ R是底层软件，RStudio是使用它比较方便的软件，界面友好。
 
 - 安装R
 
-1.打开网址 [The Comprehensive R Archive Network](The Comprehensive R Archive Network)
+1.打开网址 [https://cran.r-project.org/banner.shtml](https://cran.r-project.org/banner.shtml)
 
 2.选择 `Download R for Windows`
 
