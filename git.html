@@ -24,7 +24,7 @@
 <meta name="author" content="苗蕾蕾" />
 
 
-<meta name="date" content="2020-04-12" />
+<meta name="date" content="2020-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">基本git使用及RMarkdown用法</h1>
 <p class="author"><em>苗蕾蕾</em></p>
-<p class="date"><em>2020-04-12</em></p>
+<p class="date"><em>2020-04-15</em></p>
 </div>
 <div id="preparation" class="section level1">
 <h1><span class="header-section-number">1</span> Preparation</h1>
@@ -334,9 +334,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>安装包</strong>：必要时安装某些包，用来读取文件</p>
 <p>安装包用命令在console里面：<code>install.packages("包名")</code></p>
 <p>调用包时：<code>library(包名)</code></p></li>
-<li><p><strong>编辑数学公式</strong>：mathpix官网下载后，用mathpix截图需要的公式粘贴后，复制用双$框柱的内容到Rmd文件里即可，很简单，不会使可以问我，也可以看一下学长的这篇文章
-<a href="https://jiaxiangbu.github.io/awesome-application/learning_notes.html">https://jiaxiangbu.github.io/awesome-application/learning_notes.html</a></p></li>
-<li><p><strong>添加图片</strong>：如果综述需要图片，先将图片保存到本地项目的figure文件夹下，然后在RStudio中<code>graphics("图片目录")</code>调用，如下图</p></li>
+<li><p><strong>编辑数学公式</strong>：</p></li>
+</ul>
+<p>1.方法一：mathpix官网下载后，用mathpix截图需要的公式粘贴后，复制用双$框柱的内容到Rmd文件里即可，很简单，不会使可以问我，也可以看一下学长的这篇文章
+<a href="https://jiaxiangbu.github.io/awesome-application/learning_notes.html">https://jiaxiangbu.github.io/awesome-application/learning_notes.html</a></p>
+<p>2.方法二：直接把公式截图，粘贴到Rmd文档即可。</p>
+<ul>
+<li><strong>添加图片</strong>：如果综述需要图片，先将图片保存到本地项目的figure文件夹下，然后在RStudio中<code>graphics("图片目录")</code>调用，如下图</li>
 </ul>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;./figure/11.jpg&quot;</span>)</a></code></pre></div>
 <p><img src="figure/11.jpg" /><!-- --></p>
@@ -375,14 +379,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><code>或者[@XXX] 说明借鉴的地方</code></p>
 <p><code># 参考文献 {-}</code></p>
 <ul>
-<li><code>@XXX</code>就是bibtex里<code>@article{</code><strong>后面的内容</strong>，复制粘贴到这里就好了</li>
-<li><code>@XXX借鉴的地方</code> 表示XXX认为……</li>
-<li><code>[@XXX]借鉴的地方</code> 表示……(XXX)</li>
+<li><p><code>@XXX</code>就是bibtex里<code>@article{</code><strong>后面的内容</strong>(逗号别复制)，复制粘贴到这里就好了</p></li>
+<li><p><code>@XXX借鉴的地方</code> 表示 XXX认为……</p></li>
+<li><p><code>[@XXX]借鉴的地方</code> 表示 ……(XXX)</p></li>
 </ul>
 <p><strong>3.knit出md文件或者其他形式的文件</strong></p>
 <p>knit出的结果会自动保存在本地项目的output文件夹中，且与你命名的Rmd文件名称相同</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;./figure/15.jpg&quot;</span>)</a></code></pre></div>
 <p><img src="figure/15.jpg" /><!-- --></p>
+<ul>
+<li>如果我们需要把总结出来的结果给陆老师或者其他没有github账号的人看，可以Knit出md文件的同时，产出一个html文件，也上传到github上，然后找到这个html文件的网址，比如说：<code>https://github.com/JiaxiangBU/usd-spatial_panels/blob/master/analysis/wenxianzongshunengyuanguojia.html</code>
+我们把他改成<code>https://jiangxiangbu.github.io/usd-spatial_panels/analysis/wenxianzongshunengyuanguojia.html</code></li>
+</ul>
+<p>在确保项目的github pages开了的情况下，就可以直接网页访问了。</p>
 </div>
 <div id="文献综述提交" class="section level3">
 <h3><span class="header-section-number">3.2.3</span> 文献综述提交</h3>
